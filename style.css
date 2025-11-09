@@ -1,0 +1,119 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2c3e50;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  margin-left: 1rem;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+  color: #f39c12;
+}
+
+/* ✅ Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem;
+  background: #f39c12;
+  color: white;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ✅ Courses */
+.courses {
+  padding: 2rem;
+  text-align: center;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.course-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.course-card button {
+  margin-top: 1rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.course-card button:hover {
+  background: #f39c12;
+}
+
+/* ✅ Progress Tracking */
+.progress {
+  padding: 2rem;
+  text-align: center;
+}
+.progress-bar {
+  width: 80%;
+  margin: auto;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress-fill {
+  width: 0%;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  transition: width 0.4s ease-in-out;
+}
+
+/* ✅ Video */
+.video {
+  padding: 2rem;
+  text-align: center;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* ✅ Footer */
+.footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

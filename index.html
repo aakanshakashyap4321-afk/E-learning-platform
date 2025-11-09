@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ✅ Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">EduLearn</div>
+    <nav>
+      <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ Hero Section -->
+  <section class="hero">
+    <h1>Welcome to EduLearn</h1>
+    <p>Learn at your own pace with interactive courses 🎓</p>
+  </section>
+
+  <!-- ✅ Course Listing Section -->
+  <section class="courses" id="courses">
+    <h2>Available Courses</h2>
+    <div class="course-grid">
+      <!-- Course Card 1 -->
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, and JavaScript from scratch.</p>
+        <button onclick="enroll('Web Development')">Enroll</button>
+      </div>
+      <!-- Course Card 2 -->
+      <div class="course-card">
+        <h3>Python Programming</h3>
+        <p>Start coding with Python and build real projects.</p>
+        <button onclick="enroll('Python Programming')">Enroll</button>
+      </div>
+      <!-- Course Card 3 -->
+      <div class="course-card">
+        <h3>UI/UX Design</h3>
+        <p>Design attractive and user-friendly interfaces.</p>
+        <button onclick="enroll('UI/UX Design')">Enroll</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Progress Tracking Section -->
+  <section class="progress" id="progress">
+    <h2>Your Learning Progress</h2>
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill">0%</div>
+    </div>
+  </section>
+
+  <!-- ✅ Video Embedding Section -->
+  <section class="video" id="video">
+    <h2>Sample Course Video</h2>
+    <div class="video-container">
+      <!-- YouTube embedded video -->
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/2Ji-clqUYnA" 
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 EduLearn | All Rights Reserved</p>
+
+  <!-- ✅ Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
